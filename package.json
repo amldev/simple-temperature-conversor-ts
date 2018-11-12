@@ -2,10 +2,12 @@
   "name": "simple-temperature-conversor-ts",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "tsc-init": "./node_modules/.bin/tsc --init"
+    "tsc-init": "./node_modules/.bin/tsc --init",
+    "build": "./node_modules/.bin/tsc"
   },
   "repository": {
     "type": "git",
@@ -19,6 +21,10 @@
   },
   "homepage": "https://github.com/mugan86/simple-temperature-conversor-ts#readme",
   "devDependencies": {
+    "@types/node": "^10.12.5",
     "typescript": "^3.1.6"
+  },
+  "dependencies": {
+    "simple-temperature-conversor": "^1.1.2"
   }
 }
